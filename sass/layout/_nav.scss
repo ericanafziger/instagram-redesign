@@ -1,0 +1,15 @@
+.navbar {
+  height: 50px;
+  width: 100%;
+  background: $dark-grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+
+}
+.download-app {
+  display: flex;
+  width: 360px;
+  justify-content: space-between;
+}

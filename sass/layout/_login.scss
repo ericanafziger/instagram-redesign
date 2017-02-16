@@ -1,0 +1,39 @@
+.main {
+  background: $light-grey;
+  padding: 95px 132px;
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid $md-grey;
+  .signUpGradient {
+    position: relative;
+    bottom: -7px;
+  }
+  .grid {
+    display: flex;
+    width: 396px;
+    flex-wrap: wrap;
+    img {
+      margin: 2.5px;
+    }
+  }
+}
+.right {
+  width: 50%;
+  text-align: center;
+  .signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.login {
+  display: none;
+}
