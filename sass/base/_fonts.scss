@@ -12,7 +12,18 @@ h2 {
   width: 430px;
   margin-bottom: 40px;
 }
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: $dark-grey;
+  margin-bottom: 30px;
+}
 
 input {
   font-size: 1em;
+}
+.gradientText {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-radial-gradient(77% 9%, #5A5FCE 12%, #D82667 54%, #F46B27 76%, #FFD16A 100%);
 }

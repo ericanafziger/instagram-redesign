@@ -56,8 +56,22 @@ h2 {
   width: 430px;
   margin-bottom: 40px; }
 
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #4A4A4A;
+  margin-bottom: 30px; }
+
 input {
   font-size: 1em; }
+
+.gradientText {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-radial-gradient(77% 9%, #5A5FCE 12%, #D82667 54%, #F46B27 76%, #FFD16A 100%); }
+
+.left .grid img:hover, .signUpButton {
+  box-shadow: 1px 2px 4px rgba(74, 74, 74, 0.5); }
 
 .navbar {
   height: 50px;
@@ -73,11 +87,15 @@ input {
   width: 360px;
   justify-content: space-between; }
 
+body {
+  background: #F9F9F9; }
+
 .main {
-  background: #F9F9F9;
-  padding: 95px 132px;
+  padding: 132px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  max-width: 1575px;
+  margin: auto; }
 
 .left {
   width: 50%;
@@ -92,24 +110,53 @@ input {
   .left .grid {
     display: flex;
     width: 396px;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-bottom: 10px; }
     .left .grid img {
-      margin: 2.5px; }
+      margin: 2.5px;
+      transition: box-shadow ease-in-out 200ms;
+      box-shadow: none; }
+      .left .grid img:hover {
+        cursor: pointer; }
 
 .right {
   width: 50%;
-  text-align: center; }
-  .right .signup {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .right .signup-login {
+    margin-bottom: 30px; }
+  .right .inactive {
+    color: #9B9B9B;
+    transition: color ease-in-out 200ms; }
+    .right .inactive:hover {
+      cursor: pointer;
+      color: #4A4A4A; }
+  .right .loginForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
 
+.signup {
+  display: block; }
+
 .login {
   display: none; }
 
+.signUpButton {
+  margin: 20px 0;
+  background: #E23F51;
+  padding: 10px 25px;
+  color: #F9F9F9;
+  font-size: 0.9em;
+  border: none;
+  letter-spacing: .8px;
+  border-radius: 4px; }
+
 input {
-  width: 329px;
+  width: 396px;
   height: 40px;
   border: none;
   border-bottom: 2px solid #FCAF54;

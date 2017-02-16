@@ -1,8 +1,12 @@
-.main {
+body {
   background: $light-grey;
-  padding: 95px 132px;
+}
+.main {
+  padding: 132px;
   display: flex;
   justify-content: space-between;
+  max-width: $max-width;
+  margin: auto;
 }
 .left {
   width: 50%;
@@ -19,20 +23,44 @@
     display: flex;
     width: 396px;
     flex-wrap: wrap;
+    padding-bottom: 10px;
     img {
       margin: 2.5px;
+      transition: box-shadow ease-in-out 200ms;
+      box-shadow: none;
+      &:hover {
+        cursor: pointer;
+        @extend %box-shadow;
+      }
     }
   }
 }
 .right {
   width: 50%;
   text-align: center;
-  .signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .signup-login {
+    margin-bottom: 30px;
+  }
+  .inactive {
+    color: $md-grey;
+    transition: color ease-in-out 200ms;
+    &:hover {
+      cursor: pointer;
+      color: $dark-grey;
+    }
+  }
+  .loginForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+}
+.signup {
+  display: block;
 }
 .login {
   display: none;

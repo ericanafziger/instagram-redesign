@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Instagram</title>
     <link rel="stylesheet" href="css/index.css" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="script/script.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="navbar">
@@ -18,7 +20,7 @@
     <div class="main">
       <div class="left">
         <div id="signuptext">
-          <h2><img class="signUpGradient" src="img/signup.png"> to see photos and videos from your friends!</h2>
+          <h2><span class="gradientText">Sign up</span> to see photos and videos from your friends!</h2>
         </div>
         <div class="grid">
           <img src="img/photo1.jpg">
@@ -34,20 +36,24 @@
       </div>
       <div class="right">
         <div class="signup-login">
-          <h3>Create an accout | <span>Log in</span></h3>
+          <h3><span class="active">Create an account</span> | <span class="inactive ">Log in</span></h3>
         </div>
-        <form class="signup">
-          <input type="text" placeholder="Username" class="username">
-          <input type="text" placeholder="Password" class="password">
-          <input type="text" placeholder="Full Name" class="fullname">
-          <input type="text" placeholder="Mobile Number or Email" class="mobile">
-          <button type="submit" class="signupButton">Sign Up</button>
-        </form>
-        <form class="login">
-          <input type="text" placeholder="Username / Mobile Number / Email" class="loginUsername">
-          <input type="text" placeholder="Password" class="loginPassword">
-          <button type="submit" class="loginButton">Log In</button>
-        </form>
+        <div class="signup">
+          <form class="loginForm">
+            <input type="text" placeholder="Username" class="username">
+            <input type="text" placeholder="Password" class="password">
+            <input type="text" placeholder="Full Name" class="fullname">
+            <input type="text" placeholder="Mobile Number or Email" class="mobile">
+            <button type="submit" class="signUpButton">Sign Up</button>
+          </form>
+        </div>
+        <div class="login">
+          <form class="loginForm">
+            <input type="text" placeholder="Username / Mobile Number / Email" class="loginUsername">
+            <input type="text" placeholder="Password" class="loginPassword">
+            <button type="submit" class="signUpButton">Log In</button>
+          </form>
+        </div>
       </div>
     </div>
     <!--end of main-->
